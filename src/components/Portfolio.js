@@ -8,10 +8,10 @@ import magnificPopup from 'magnific-popup';
 const content = require('../assets/portfolio-content.js').default;
 
 const Gallery = styled.div `
-  ${'' /*overflow: hidden;*/}
+  ${ ''/*overflow: hidden;*/}
   height: 100%;
   width: 100%;
-  ${'' /*display: block;*/}
+  ${ ''/*display: block;*/}
   margin: 0;
   padding: 0;
   position: relative;`
@@ -96,14 +96,22 @@ export default class Portfolio extends Component {
                 }}>
                   <div className="full-content">
                     <div className="images">
-                      <ul className="gallery" style={{height: '45vw'}}>
+                      <ul
+                        className="gallery"
+                        style={{
+                        height: '60vw'
+                      }}>
                         {elem
                           .photos
                           .map((photo) => {
                             return (
                               <li>
                                 <a href={photo} className="with-caption image-link">
-                                  <img src={photo} style={{width: '100%'}}/>
+                                  <img
+                                    src={photo}
+                                    style={{
+                                    width: '100%'
+                                  }}/>
                                 </a>
                               </li>
                             )
@@ -114,7 +122,14 @@ export default class Portfolio extends Component {
                 </div>
               )
             })}
-            <div id='close' title="Close (Esc)" type="button" className="mfp-close" style={{visibility: 'hidden'}}>×</div>
+            <div
+              id='close'
+              title="Close (Esc)"
+              type="button"
+              className="mfp-close"
+              style={{
+              visibility: 'hidden'
+            }}>×</div>
           </Gallery>
 
         </div>

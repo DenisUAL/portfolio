@@ -11,7 +11,7 @@ injectGlobal`
   }
 
 .gallery {
-  overflow: hidden;
+  overflow: auto;
   height: 100%;
   width: 100%;
   display: block;
@@ -25,7 +25,7 @@ injectGlobal`
   float: left;
   width: 20%;
   height: 100%;
-  overflow: hidden;
+  overflow: auto;
   position: relative;
   background-repeat: no-repeat;
   background-position: center center;
@@ -72,7 +72,7 @@ injectGlobal`
 .full-content {
   visibility: hidden;
   background: rgba(0, 0, 0, 0.6);
-  height: 100%;
+  ${'' /* height: 100%; */}
   width: 100%;
 }
 
@@ -90,7 +90,7 @@ Image Gallery
 .images ul li {
   float: left;
   width: 150px;
-  height: 125px;
+  ${'' /* height: 125px; */}
   list-style: none;
   margin: 40px 40px 40px 40px;
   opacity: 1;
