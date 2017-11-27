@@ -10,7 +10,7 @@ export default [
   }, {
     albumDescription: '',
     cover: 'https://pp.userapi.com/c840533/v840533086/286da/t5TjD3yOjwI.jpg',
-    photos: ['https://pp.userapi.com/c840533/v840533086/286da/t5TjD3yOjwI.jpg', 'https://pp.userapi.com/c840533/v840533086/286d0/mm2LZbW-g8c.jpg','https://pp.userapi.com/c840533/v840533086/286e4/3KCok8Tn560.jpg']
+    photos: ['https://pp.userapi.com/c840533/v840533086/286da/t5TjD3yOjwI.jpg','https://pp.userapi.com/c840533/v840533086/286d0/mm2LZbW-g8c.jpg','https://pp.userapi.com/c840533/v840533086/286e4/3KCok8Tn560.jpg', 'https://pp.userapi.com/c840728/v840728525/29d18/Lbla76W5qpc.jpg', 'https://pp.userapi.com/c824202/v824202525/39fde/xyT44iv3W6o.jpg', 'https://pp.userapi.com/c841034/v841034525/40a5e/cPMoYpHlWq4.jpg']
   }, {
     albumDescription: '',
     cover: 'https://pp.userapi.com/c840131/v840131282/4bd85/VLpmzg6CRGE.jpg',
