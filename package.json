@@ -4,15 +4,20 @@
   "private": true,
   "dependencies": {
     "@sendgrid/mail": "^6.1.4",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
     "jquery": "^3.2.1",
     "magnific-popup": "^1.1.0",
+    "path": "^0.12.7",
     "react": "^16.1.1",
     "react-dom": "^16.1.1",
     "react-router": "^3.2.0",
     "react-scripts": "^1.0.17",
-    "styled-components": "^2.2.3"
+    "styled-components": "^2.2.3",
+    "volleyball": "^1.4.1"
   },
   "scripts": {
+    "run": "node server.js",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",

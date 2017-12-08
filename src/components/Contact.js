@@ -1,10 +1,10 @@
 import React, {Component, PropTypes} from 'react';
 import Navbar from './Navbar';
 import styled from 'styled-components';
-const sgMail = require('@sendgrid/mail');
-sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+import $ from 'jquery';
 const cont = require('../assets/contact.jpg');
 const send = require('../assets/send.png');
+
 
 const TextArea = styled.textarea `
   white-space: normal;
@@ -59,7 +59,9 @@ export default class Contact extends Component {
             <div className='col s6 l6 center'>
               <div className="row">
                 <div className="input-field col s12">
-                 <p>For promotional and business collaborations, or for any pesonal questions, you can drop me a line: </p>
+                  <p>For promotional and business collaborations, or for any pesonal questions,
+                    you can drop me a line:
+                  </p>
                 </div>
               </div>
               <div className="row">
@@ -116,7 +118,7 @@ export default class Contact extends Component {
                         src={send}
                         onClick={() => {
                         console.log('your message has been sent');
-                        sgMail.send(this.state.msg)
+                        $.ajax({url: "/send", type: "POST", data: this.state.msg})
                       }}/>
                     </div>
                   </div>
